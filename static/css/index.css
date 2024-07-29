@@ -1,0 +1,271 @@
+body {
+    text-align: justify;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Formatações do Cabeçalho principal */
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.headerContainer {
+    margin: 2em 5em 2em 5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconeMenu {
+    height: 30px;
+    width: 30px;
+}
+
+/* Formatações da parte superior dos artigos de introdução */
+
+.sectionContainerTitulo {
+    margin: 2em 5em 2em 5em;
+    display: flex;
+}
+
+.sectionContainerTitulo h1 {
+    font-size: 60px;
+    margin-top: 1em;
+    position: absolute;
+    width: 10em;
+}
+
+.sectionContainerTitulo p {
+    margin: 20em 5em 0em 0em;
+}
+
+.divH1sectionContainerTitulo {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.sectionContainerArtigo {
+    margin: 2em 5em 2em 6em;
+    display: flex;
+}
+
+.sectionContainerArtigoDivDireita {
+    display: grid;
+}
+
+.sectionContainerArtigoDivDireita h1, p, a {
+    margin: 1em 0em 0em 2em;
+}
+
+.imagem01 {
+    width: 680px;
+    height: 730px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem02 {
+    width: 350px;
+    height: 560px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem03 {
+    width: 180px;
+    height: 180px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem04 {
+    width: 700px;
+    height: 415px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem05 {
+    width: 500px;
+    height: 580px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem06 {
+    width: 210px;
+    height: 180px;
+    border: solid 2px gray;
+    border-radius: 2px;
+}
+
+.imagem07 {
+    width: 300px;
+    height: 380px;
+    border: solid 2px gray;
+    border-radius: 2px;
+    margin: 1em;
+}
+
+.divImagens03 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sectionContainerArtigo02 {
+    margin: 2em 5em 2em 5em;
+    display: flex;
+    align-items: center;
+}
+
+.sectionContainerArtigo02 div {
+    margin: 0em 2em 0em 0em;
+}
+
+.sectionContainerArtigo02Locais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divContainerArtigo02Locais {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin: 1em 2em 2em 3em;
+
+}
+
+.sectionContainerArtigo03 {
+    margin: 2em 5em 2em 5em;
+    display: flex;
+    align-items: center;
+}
+
+.divContainerArtigo03Esquerdo {
+    display: flex;
+    width: 50%;
+    flex-direction: column
+}
+
+.divContainerArtigo03Direito {
+    display: flex;
+    width: 50%;
+}
+
+.sectionContainerArtigo03Rodape {
+    margin: 2em 5em 2em auto;
+    width: 50%;
+}
+
+.rodape {
+    color: white;
+    background-color: #292929;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .iconeMenu {
+        margin-top: 1em;
+    }
+
+    .sectionContainerTitulo h1 {
+        font-size: 1.5em;
+    }
+
+    .sectionContainerTitulo p {
+        font-size: 0.9em;
+        margin: 0.5em 0;
+    }
+
+    .sectionContainerArtigo,
+    .sectionContainerArtigo02 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sectionContainerArtigo img,
+    .sectionContainerArtigo02 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .divImagens03 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .divImagens03 img {
+        width: 80px;
+    }
+
+    .sectionContainerArtigo02Locais {
+        flex-direction: column;
+    }
+
+    .divContainerArtigo02Locais {
+        flex: 1 1 auto;
+        margin: 1em 0;
+    }
+
+    .sectionContainerArtigo03 {
+        flex-direction: column;
+    }
+
+    .divContainerArtigo03Esquerdo,
+    .divContainerArtigo03Direito {
+        width: 100%;
+        text-align: center;
+    }
+
+    .divContainerArtigo03Direito img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .sectionContainerTitulo h1 {
+        font-size: 1.2em;
+    }
+
+    .sectionContainerTitulo p {
+        font-size: 0.8em;
+    }
+
+    .sectionContainerArtigo img,
+    .sectionContainerArtigo02 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .divImagens03 img {
+        width: 60px;
+    }
+
+    .divContainerArtigo02Locais {
+        flex: 1 1 auto;
+        margin: 0.5em 0;
+    }
+
+    .divContainerArtigo03Direito img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
