@@ -288,3 +288,65 @@ header h1 {
         flex-direction: column;
     }
 }
+
+.menuLateral {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Aqui consigo deixar o menu escondido, pode ser necessário mudar estes códigos em caso de bug */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 2em;
+}
+
+.menuLateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menuLateral ul li {
+    margin: 1em 0;
+}
+
+.menuLateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menuLateral .fecharMenu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.sobreposição {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 999;
+}
+
+.menuLateral.active {
+    left: 0;
+}
+
+.sobreposição.active {
+    opacity: 1;
+    visibility: visible;
+}
