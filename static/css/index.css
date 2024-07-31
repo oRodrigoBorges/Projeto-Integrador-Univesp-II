@@ -190,6 +190,9 @@ header h1 {
 .rodape {
     color: white;
     background-color: #292929;
+    margin: 1em 1em 0em 3em;
+    padding: .5em 1em 1em 1em;
+    text-align: center;
 }
 
 /* Configurações do scroll "Barra Lateral" */
