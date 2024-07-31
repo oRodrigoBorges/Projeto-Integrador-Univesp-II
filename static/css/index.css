@@ -1,5 +1,6 @@
 body {
     text-align: justify;
+    margin-left: 4em;
 }
 
 h1 {
@@ -191,7 +192,7 @@ header h1 {
 .rodape {
     color: white;
     background-color: #292929;
-    margin: 1em 1em 0em 3em;
+    margin: 1em 1em 0em 0em;
     padding: .5em 1em 1em 1em;
     text-align: center;
 }
