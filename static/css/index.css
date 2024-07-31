@@ -63,6 +63,8 @@ header h1 {
     margin: 1em 0em 0em 2em;
 }
 
+/* Configurações das imagens da página inicial */
+
 .imagem01 {
     width: 680px;
     height: 730px;
@@ -168,6 +170,25 @@ header h1 {
 .rodape {
     color: white;
     background-color: #292929;
+}
+
+/* Configurações do scroll "Barra Lateral" */
+
+::-webkit-scrollbar {
+    width: 12px; /* Largura do scroll */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor do fundo do scroll */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #977aff; /* Cor do scroll */
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5900ff; /* Cor do scroll com mouse em cima */
 }
 
 @media (max-width: 768px) {
