@@ -170,8 +170,8 @@ header h1 {
 .sectionContainerEntreEmContato {
     display: grid;
     justify-content: center;
-    grid-template-columns: 15em 15em;
-    grid-template-rows: 3em 10em;
+    grid-template-columns: 17em 17em;
+    grid-template-rows: 1em 2em;
     grid-template-areas:
       "h2EntreEmContato h2EntreEmContato"
       "pEntreEmContato formEntreEmContato";
