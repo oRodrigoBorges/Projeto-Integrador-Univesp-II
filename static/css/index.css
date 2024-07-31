@@ -167,6 +167,26 @@ header h1 {
     width: 50%;
 }
 
+.sectionContainerEntreEmContato {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15em 15em;
+    grid-template-rows: 3em 10em;
+    grid-template-areas:
+      "h2EntreEmContato h2EntreEmContato"
+      "pEntreEmContato formEntreEmContato";
+}
+
+.h2EntreEmContato {
+    grid-area: h2EntreEmContato;
+    text-align: center;
+}
+
+.pEntreEmContato {
+    grid-area: pEntreEmContato;
+    margin-right: 1.5em;
+}
+
 .rodape {
     color: white;
     background-color: #292929;
